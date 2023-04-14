@@ -30,7 +30,10 @@ Sortedarr[1] = 7;
 Sortedarr[2] = 8;
 Sortedarr[3] = 9;
 Sortedarr[4] = 10;
-/** add tests to check for this unit test **/
+	int[] arr = {-8, -9, -7, -10, -2};
+    int[] sortedArr = {-10, -9, -8, -7, -2};
+    SelectionSort.selectionSort(arr);
+    assertArrayEquals(sortedArr, arr);
 }
 public void testNegative(){
 /** Test data contains negative values only **/

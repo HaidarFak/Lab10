@@ -36,7 +36,10 @@ public void testNegative(){
 /** Test data contains negative values only **/
 }
 public void testMixed(){
-/** Test data contains with both positive, negative and zeros **/
+	int[] arr = {8, -9, 0, 10, -2};
+    int[] sortedArr = {-9, -2, 0, 8, 10};
+    SelectionSort.selectionSort(arr);
+    assertArrayEquals(sortedArr, arr);
 }
 public void testDuplicates(){
 int[] arr = {8, 9, 7, 10, 2, 2, 7, 8};

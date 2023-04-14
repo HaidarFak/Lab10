@@ -36,7 +36,10 @@ Sortedarr[4] = 10;
     assertArrayEquals(sortedArr, arr);
 }
 public void testNegative(){
-/** Test data contains negative values only **/
+	int[] arr = {-8, -9, -7, -10, -2};
+    int[] sortedArr = {-10, -9, -8, -7, -2};
+    SelectionSort.selectionSort(arr);
+    assertArrayEquals(sortedArr, arr);
 }
 public void testMixed(){
 	int[] arr = {8, -9, 0, 10, -2};

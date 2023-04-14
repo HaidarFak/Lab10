@@ -39,6 +39,9 @@ public void testMixed(){
 /** Test data contains with both positive, negative and zeros **/
 }
 public void testDuplicates(){
-/** Test data contains duplicates **/
+int[] arr = {8, 9, 7, 10, 2, 2, 7, 8};
+    int[] sortedArr = {2, 2, 7, 7, 8, 8, 9, 10};
+    SelectionSort.selectionSort(arr);
+    assertArrayEquals(sortedArr, arr);
 }
 }
